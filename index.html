@@ -1,0 +1,282 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bharath V | Portfolio</title>
+
+<style>
+:root {
+  --primary:#4f46e5;
+  --dark:#0f172a;
+  --light:#f8fafc;
+}
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+html {
+  scroll-behavior:smooth;
+}
+body {
+  background:var(--dark);
+  color:white;
+}
+
+/* NAVBAR */
+nav {
+  position:fixed;
+  width:100%;
+  padding:15px 10%;
+  background:rgba(15,23,42,.95);
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  z-index:1000;
+}
+nav h1 {
+  color:var(--primary);
+}
+nav ul {
+  display:flex;
+  gap:25px;
+}
+nav ul li {
+  list-style:none;
+}
+nav ul li a {
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+}
+nav ul li a:hover {
+  color:var(--primary);
+}
+
+/* HERO */
+.hero {
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  padding:0 10%;
+}
+.hero-content {
+  max-width:600px;
+}
+.hero h2 {
+  font-size:3rem;
+}
+.hero h2 span {
+  color:var(--primary);
+}
+.hero p {
+  margin:15px 0 30px;
+  color:#cbd5f5;
+}
+.btn {
+  padding:12px 25px;
+  background:var(--primary);
+  color:white;
+  border:none;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:600;
+}
+
+/* SECTIONS */
+section {
+  padding:80px 10%;
+}
+.section-title {
+  text-align:center;
+  margin-bottom:50px;
+}
+.section-title h2 {
+  font-size:2.2rem;
+  color:var(--primary);
+}
+
+/* ABOUT */
+.about {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:40px;
+}
+.about p {
+  color:#cbd5f5;
+}
+
+/* CARDS */
+.grid {
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+.card {
+  background:#020617;
+  padding:25px;
+  border-radius:12px;
+  transition:.3s;
+}
+.card:hover {
+  transform:translateY(-8px);
+  box-shadow:0 10px 30px rgba(79,70,229,.4);
+}
+.card h3 {
+  margin-bottom:10px;
+  color:var(--primary);
+}
+.card p {
+  color:#cbd5f5;
+}
+
+/* CONTACT */
+.contact {
+  text-align:center;
+}
+.contact p {
+  margin:10px 0;
+}
+footer {
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  color:#94a3b8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .hero h2 {
+    font-size:2.3rem;
+  }
+  .about {
+    grid-template-columns:1fr;
+  }
+  nav ul {
+    display:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+  <h1>Bharath V</h1>
+  <ul>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#experience">Experience</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-content">
+    <h2>Hi, I'm <span>Bharath V</span></h2>
+    <p>UI/UX Designer | Graphic Designer | Creative Thinker  
+       Passionate about creating beautiful and user-friendly digital experiences.</p>
+    <a href="#contact" class="btn">Hire Me</a>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="section-title">
+    <h2>About Me</h2>
+  </div>
+  <div class="about">
+    <p>
+      I am a creative and detail-oriented designer with strong skills in
+      UI/UX design, visual design, photography, and digital marketing.
+      I enjoy transforming ideas into meaningful digital experiences.
+    </p>
+    <p>
+      Currently pursuing B.Sc Computer Science and actively building
+      real-world design and web projects using modern tools.
+    </p>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="section-title">
+    <h2>Skills</h2>
+  </div>
+  <div class="grid">
+    <div class="card"><h3>UI / UX Design</h3><p>Figma, Canva, Photoshop</p></div>
+    <div class="card"><h3>Web Development</h3><p>HTML, CSS, JavaScript</p></div>
+    <div class="card"><h3>Graphic Design</h3><p>Logos, Posters, Branding</p></div>
+    <div class="card"><h3>Digital Marketing</h3><p>Content & Strategy</p></div>
+  </div>
+</section>
+
+<!-- EXPERIENCE -->
+<section id="experience">
+  <div class="section-title">
+    <h2>Experience</h2>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>UI/UX Design Intern</h3>
+      <p><strong>CodSoft</strong> | Jul 2025 – Aug 2025</p>
+      <p>Designed mobile signup flows, email login pages and WhatsApp-style UI using Figma & Photoshop.</p>
+    </div>
+  </div>
+</section>
+
+<!-- EDUCATION -->
+<section>
+  <div class="section-title">
+    <h2>Education</h2>
+  </div>
+  <div class="grid">
+    <div class="card">
+      <h3>B.Sc Computer Science</h3>
+      <p>NGM College (2023–2026)</p>
+      <p>69.45%</p>
+    </div>
+    <div class="card">
+      <h3>HSC – Computer Science</h3>
+      <p>R.V.S School (2010–2023)</p>
+      <p>74.16%</p>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <div class="section-title">
+    <h2>Contact</h2>
+  </div>
+  <p>📧 bharathmounesh864@gmail.com</p>
+  <p>📞 +91 93459 85679</p>
+  <p>📍 Pollachi, Tamil Nadu</p>
+</section>
+
+<footer>
+  © 2026 Bharath V | Designed with ❤️
+</footer>
+
+<script>
+// simple fade animation
+const cards = document.querySelectorAll('.card');
+window.addEventListener('scroll',()=>{
+  cards.forEach(card=>{
+    const rect = card.getBoundingClientRect();
+    if(rect.top < window.innerHeight - 100){
+      card.style.opacity = 1;
+      card.style.transform = "translateY(0)";
+    }
+  });
+});
+</script>
+
+</body>
+</html>
